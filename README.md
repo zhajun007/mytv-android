@@ -42,6 +42,16 @@
 
 - 访问以下网址：`http://<设备IP>:10591`
 
+### 常见问题解答
+#### 我的源在本播放器上播放不了/起播太慢，但我确认源是没有问题的
+
+- 播放不了尝试打开``设置/播放器/更好的视频探测``，起播太慢尝试关闭``设置/播放器/更好的视频探测``
+- 对于使用``rtp2httpd``转发IPTV的用户，对于支持fcc的源，优先使用``Media3``和``VLC``播放器以获得快速的切台体验
+- 对于使用``rtsp``源的用户，请勿使用Media3播放器，你可以通过在远程面板添加``rtsp://.*``规则并指定`IJK`或``VLC``播放器播放
+#### 远程面板扫码二维码识别较差
+目前发现苹果自带二维码工具可能出现此问题，建议使用微信扫码
+#### 我在播放时遇到播放器提示错误，但我希望进一步了解有关信息
+请至``网页面板/调试 导出Logcat``以查看。建议错误发生后立即导出，否则此日志容易被后面的日志输出所覆盖
 ## 下载
 
 可以通过右侧release进行下载
@@ -53,6 +63,11 @@
 - [频道标志项目] (https://github.com/mytv-android/myTVlogo)
 - [JS订阅源] (https://github.com/mytv-android/mytvJS)
 - [migu订阅源项目] (https://github.com/mytv-android/myMIGU)
+
+## 相关项目
+- [rtphttpd - IPTV转发工具] (https://github.com/stackia/rtp2httpd)
+- [Global Free TV — 网页版 IPTV] (https://www.globalfreetv.com/)
+
 ## 参与开发
 
 由于项目开源引来大量的分发（Star:Fork 比例为 5:1），且这些分发者不能自行解决其渠道用户的反馈，项目目前将不再公开源代码。
